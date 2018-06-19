@@ -1,0 +1,207 @@
+body{
+    font-family: 10px 'Roboto Slab', serif;
+    background: #6cf;
+    height: 50%;
+    min-height: 330px;
+
+}
+
+.container-wrap{
+    min-height: 330px;
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(255, 255, 255, 0.4);
+    padding: 50px;
+    border: 1px solid #08038C;
+    box-shadow: 0 0 9px 6px #fff;
+}
+
+.title{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #08038C;
+    height: 50px;
+    max-width: 1000px;
+
+}
+
+.question{
+    padding: 20px;
+    font-size: 22px;
+    background: #08038C;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+    max-width: 1000px;
+}
+
+.option{
+    width: 463px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 10px 10px 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+    max-width: 1000px;
+
+}
+
+.option:hover{
+    background: #08038C;
+    color: #f6f6f6;
+}
+
+ .next-btn{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+
+
+}
+
+.next-btn:hover{
+    background: #08038C;
+    color: #f6f6f6;
+}
+#nextButton:disabled:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #08038C;
+    cursor: no-drop;
+}
+
+.result{
+    text-align: center;
+    font-size: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    
+}
+
+.option input:checked .option{
+    background: #08038C;
+    color: #000;
+}
+
+
+/* media queries for IPAD */
+
+@media only screen and (max-width: 1024px) {
+    .container-wrap{
+        max-width: 1020px;
+        transform: translateX(-50%) translateY(-50%);
+        width: 100%;
+    }
+    .question{
+        font-size: 30px;
+        border-radius: 20px;
+        margin: 10px 0 10px 0;
+        color: #f6f6f6;
+        max-width: 1024px;
+        width: 100%;
+    }
+    .option{
+        max-width: 1024px;
+        width: 100%;
+        font-size: 35px;
+    }
+    .next-btn{
+        background: rgba(255, 200, 255, 0.5);
+        width: 400px;
+        height: 40px;
+        font-size: 30px;
+        text-align: center;
+        padding-left: 20px;
+        
+    }
+    .title{
+        font-size: 50px;
+        margin-bottom: 20px;
+        padding: 10px;
+    
+    }
+    #nextButton:disabled:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #08038C;
+        cursor: no-drop;
+    }
+}
+/* large screen MOBILE */
+@media only screen and (max-width: 767px) {
+    .container-wrap{
+        min-height: 330px;
+        max-width: 767px;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 50px;
+        width: 100px;
+        
+    }
+    .question{
+        font-size: 25px;
+        color: #f6f6f6;
+    }
+    .next-btn{
+        background: rgba(190, 205, 255, 0.4);
+        width: 300px;
+        height: 30px;
+        font-size: 50px;
+
+    }
+    #nextButton:disabled:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #08038C;
+        cursor: no-drop;
+    }
+
+}
+/* iphones and other MOBILE */
+@media only screen and (max-width: 414px) {
+    .container-wrap{
+        min-height: 300px;
+        width: 100%;
+
+    }
+    .question{
+        font-size: 18px;
+        color: #f6f6f6;
+        width: 100%;
+    }
+    .next-btn{
+        width: 200px;
+        font-size: 25px;
+        color: black;
+        border-radius: 45%;
+        height: 30px;
+
+    }
+    .option{
+        width: 100%;
+        /* height: 100%; */
+        font-size: 23px;    
+    }
+    
+    .title{
+        font-size: 38px;
+        height: 50px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #nextButton:disabled:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #08038C;
+        cursor: no-drop;
+    }
+
+}

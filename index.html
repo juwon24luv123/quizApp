@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assesment Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+    <!-- the container thet hold the quiz body -->
+    <div id="quizContainer" class="container-wrap">
+        <!-- this div hold the title of the quiz  -->
+        <div class="title">Programming Quiz</div>
+        <!-- this div hold the questions of the quiz -->
+        <div id="question" class="question"></div>
+        <!-- this hold the radio button of options to the quiz -->
+        <label class="option">
+            <input type="radio" name="option" value="1"><span id="opt1"></span>
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="2"><span id="opt2"></span>
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="3"><span id="opt3"></span>
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="4"><span id="opt4"></span>
+        </label>
+
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+
+    </div>
+
+    <div id="result" class="container result"></div>
+
+
+    <script src="question.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
